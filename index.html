@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Programming Portfolio</title>
+    <meta name="keywords" content="Programador, Ingeniería informática">
+    <meta name="description" content="Pagina web de mi perfil profecional por Bernardo Nijarec Gomez Rizo">
+    <meta name="author" content="Bernardo Nijarec Gomez Rizo">
+    <meta http-equiv="refresh" content="250">
+    <link rel="shortcut icon" href="Imagenes/miFoto2icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="Estilos/index.css"> <!-- You can link your CSS file here for styling -->
+
+</head>
+<body>
+  <script type="text/javascript" src="Scripts/index.js"></script>
+    <header id="header">
+        <div id="titulo">
+        <img id="logos" src="Imagenes/miFoto2icon.png" alt="icono">
+        <h1>My Programming Portfolio</h1>
+    </div>
+        <div id="language">
+        <img id="spanish" src="Imagenes/logosSkills/mexicoFrag.jpg" alt="Spanish language" onclick="cambiarIdioma('español')">
+        <img id="english" src="Imagenes/logosSkills/usaFrag.png" alt="English language" onclick="cambiarIdioma('ingles')">
+        </div>
+    </header>
+    
+    <nav id="navbar">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#my_skills">My Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <div>
+            
+            <img id="fotoPerfil" src="Imagenes/miFoto2.png" alt="foto de perfil">
+        
+            <p id="sobremi">
+               
+       
+                 Hello, I'm Benardo Nijarec Gómez Rizo, a Computer Engineer from the University of Guadalajara.
+                 I'm passionate about software development of all kinds, 
+                 and I'm ready to face any challenge that comes my way and learn new things in the world of software development. 
+                 Additionally, I aim to further develop myself as a professional.
+           
+                </p>
+            </div>
+            <!-- You can add more information about yourself here -->
+        </section>
+        <section id="my_skills">
+            <h2>My Skills</h2>
+            <p onclick="mostrarSkills(['html','js','css'])">Front End</p>
+        <ul>
+            <li id="html"><div>HTML</div><img src="Imagenes/logosSkills/html5.png" alt="HTML Logo"> </li>
+            <li id="js"><div>JavaScript</div><img src="Imagenes/logosSkills/javaScript.png" alt="JavaScript Logo"></li>
+            <li id="css"><div>CSS</div><img src="Imagenes/logosSkills/css.png" alt="CSS Logo"></li>
+        </ul>
+        <p onclick="mostrarSkills(['cc','csharp','java','php','basic','python','sql'])">Back End</p>
+        <ul>
+            <li id="cc"><div>C/C++</div><img src="Imagenes/logosSkills/cc++.png" alt="C/C++ Logo"> </li>
+            <li id="csharp"><div>C#</div><img src="Imagenes/logosSkills/csharp.png" alt="C# Logo"></li>
+            <li id="java"><div>java</div><img src="Imagenes/logosSkills/java.png" alt="Java Logo"></li>
+            <li id="php"><div>PHP</div><img src="Imagenes/logosSkills/php2.png" alt="PHP Logo"></li>
+            <li id="basic"><div>Basic</div><img src="Imagenes/logosSkills/basic.jfif" alt="Basic Logo"></li>
+            <li id="python"><div>Python</div><img src="Imagenes/logosSkills/python.png" alt="Python Logo"></li>
+            <li id="sql"><div>SQL</div><img src="Imagenes/logosSkills/sql.png" alt="SQL Logo"></li>
+        </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project" onclick="bottonDirections('https://github.com/Nijarec/Encriptador_Cesar')">
+                <h3>Encriptador Cesar</h3>
+                <p class="dproyecto">Program developed in Visual Basic, which encrypts texts through Caesar encryption.</p>
+                
+            </div>
+            <div class="project" onclick="bottonDirections('https://github.com/Nijarec/Reproductor_Simple')">
+                <h3>Reproductor simple</h3>
+                <p class="dproyecto">Simple music player developed with Java in Android Studio.</p>
+            </div>
+            <!-- You can add more project sections as needed -->
+        </section>
+<section id="education">
+<h2>Education</h2>
+<ul>
+    <li onmouseout="mostrarPromedio('Imagenes/logosSkills/udglogo.png','udg')" onmouseenter="mostrarPromedio('Imagenes/logosSkills/promedioUdg.gif','udg')" onclick="bottonDirections('http://www.cucei.udg.mx/carreras/informatica/es/acerca-de')" >
+        <img id="udg" src="Imagenes/logosSkills/udglogo.png" alt="UDG Logo"><div>Computer Engineering</div> </li>
+    <li  onmouseout="mostrarPromedio('Imagenes/logosSkills/cecytelogo.png','cecyte')" onmouseenter="mostrarPromedio('Imagenes/logosSkills/promedioCecyte.gif','cecyte')" onclick="bottonDirections('https://historico-sgg.jalisco.gob.mx/content/colegio-de-estudios-cientificos-y-tecnologicos-del-estado-de-jalisco-cecytej')">
+    <img id="cecyte" src="Imagenes/logosSkills/cecytelogo.png" alt="Cecyte Jalisco Logo" >
+    <div>Technician in Equipment and Systems Maintenance</div></li>
+</ul>
+</section>
+<section id="contact">
+    <h2>Contact</h2>
+    <div>
+    <p>  <b>Email:</b> ing.nijarec.gomez@gmail.com</p>
+    <p>  <b id="phone">Phone:</b> <br>+ 52 33 31 07 71 24</p>
+</div>
+
+</section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Programming Portfolio</p>
+    </footer>
+</body>
+</html>
