@@ -322,11 +322,12 @@ background-repeat: no-repeat;
 }
 .lang-buttons .btn_es{
   background-image: url("/imagenes/logosSkills/mexicoFrag.jpg");
-
+   backgroud-color:red;
   background-size: contain;
 }
 .lang-buttons .btn_en{
  background-image: url("/imagenes/logosSkills/usaFrag.png");
+  backgroud-color:red;
  background-size: cover;
 }
 .lang-buttons button:hover {
@@ -348,3 +349,4 @@ background-repeat: no-repeat;
     padding: 25px;
   }
 }
+
