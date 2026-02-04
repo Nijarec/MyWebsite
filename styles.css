@@ -317,7 +317,7 @@ background-repeat: no-repeat;
   border-radius: 6px;
   cursor: pointer;
   background: #3b82f6;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0);
   font-weight: bold;
 }
 .lang-buttons .btn_es{
@@ -348,5 +348,6 @@ background-repeat: no-repeat;
     padding: 25px;
   }
 }
+
 
 
