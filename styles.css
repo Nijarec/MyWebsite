@@ -304,6 +304,36 @@ background-repeat: no-repeat;
 
   color:rgb(7, 255, 234);
 }
+.lang-buttons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.lang-buttons button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #3b82f6;
+  color: rgba(255, 255, 255, 0);
+  font-weight: bold;
+}
+.lang-buttons .btn_es{
+  background-image: url("/imagenes/logosSkills/mexicoFrag.jpg");
+
+  background-size: contain;
+}
+.lang-buttons .btn_en{
+ background-image: url("/imagenes/logosSkills/usaFrag.png");
+ background-size: cover;
+}
+.lang-buttons button:hover {
+  background: #2563eb;
+  color: #ffffff;
+}
+
 /* FOOTER */
 .footer {
   text-align: center;
