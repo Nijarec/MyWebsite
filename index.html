@@ -9,21 +9,27 @@
 
 </head>
 <body>
+<script type="text/javascript" src="scriptLanguages.js"></script>
 
   <!-- HEADER -->
   <header class="header">
-    <h1>BERNARDO NIJAREC GÓMEZ RIZO</h1>
-    <p>Desarrollador de Software</p>
+    <h1 data-lang="title">BERNARDO NIJAREC GÓMEZ RIZO</h1>
+    <p data-lang="subtitle">Desarrollador de Software</p>
+    <div class="lang-buttons">
+  <button class="btn_es" onclick="setLanguage('es')">ES</button>
+  <button class="btn_en" onclick="setLanguage('en')">EN</button>
+</div>
+
   </header>
 
   <!-- SOBRE MI -->
   <section class="section">
  
-    <h2>Sobre mí</h2>
+    <h2 data-lang="about">Sobre mí</h2>
    <div class="about-content">
     <img src="imagenes/perfilA.gif" alt="Foto de perfil" class="profile-img">
 
-    <p>
+    <p data-lang="aboutText">
       Soy desarrollador de software con experiencia en desarrollo de aplicaciones
       administrativas y soluciones web. Me interesa seguir aprendiendo y mejorar
       continuamente mis habilidades técnicas.
@@ -33,7 +39,7 @@
 
   <!-- HABILIDADES -->
 <section class="section bg">
-  <h2>Habilidades</h2>
+  <h2 data-lang="skills">Habilidades</h2>
 
   <div class="skills-scroll">
     <div class="skill-card" style="background-image: url('imagenes/logosSkills/html.png')">
@@ -77,12 +83,12 @@
 
   <!-- EXPERIENCIA -->
   <section class="section">
-    <h2>Experiencia</h2>
+    <h2 data-lang="experience">Experiencia</h2>
       <div class="experience-scroll">
 
     <div class="exp-card">
-      <h3>Proyecto Modular Universidad de Guadalajara - GESTOR DE PROYECTO</h3>
-      <p>
+      <h3 data-lang="exp1_title">Proyecto Modular Universidad de Guadalajara - GESTOR DE PROYECTO</h3>
+      <p data-lang="exp1_desc">
         Realicé el proyecto final de mi carrera universitaria como ingeniero en informática, el
 cual llevó por nombre “GearWater”. Este proyecto consistió en el desarrollo de una
 aplicación para teléfonos móviles y otros dispositivos, enfocada en calcular la
@@ -96,24 +102,24 @@ El proyecto se completó de manera exitosa, cumpliendo con sus objetivos y
 obteniendo la aprobación del comité universitario, satisfaciendo plenamente sus
 expectativas. Todo esto lo hice usando <b>Java</b> dentro de <b>Android Studio</b>.
       </p>
-      <span>ABRIL 2020 - DICIEMBRE 2020 | Compañia o institucion: Proyecto Final UDG</span>
+      <span data-lang="exp1_date">ABRIL 2020 - DICIEMBRE 2020 | Compañia o institucion: Proyecto Final UDG</span>
     </div>
 
     <div class="exp-card">
-      <h3>Desarrollo de sistema administrativo “Candy Spa” - GESTOR DE PROYECTO</h3>
-      <p>
+      <h3 data-lang="exp2_title">Desarrollo de sistema administrativo “Candy Spa” - GESTOR DE PROYECTO</h3>
+      <p data-lang="exp2_desc">
         Diseñé e implementé un software de gestión integral para un spa, con funcionalidades
 de punto de venta, control de inventarios, administración de clientes y empleados,
 generación de reportes y agenda de citas. El sistema optimizó los procesos internos,
 mejoró la atención al cliente y centralizó la información operativa en una única
 plataforma. Todo esto lo realice usando <b>Basic</b> en <b>Visual Studio</b> y <b>SQL Server</b>.
       </p>
-      <span>MAYO 2016 | Compañia o institucion: Proyecto académico</span>
+      <span data-lang="exp2_date">MAYO 2016 | Compañia o institucion: Proyecto académico</span>
     </div>
 
     <div class="exp-card">
-      <h3>Programa de cifrado de textos y archivos - GESTOR DE PROYECTO</h3>
-      <p>
+      <h3 data-lang="exp3_title">Programa de cifrado de textos y archivos - GESTOR DE PROYECTO</h3>
+      <p data-lang="exp3_desc">
         Desarrollé una aplicación de escritorio llamada “ECS: Encrypter Control Security”
 capaz de encriptar y desencriptar textos utilizando una clave de acceso personalizada
 creada por el usuario. El sistema admite el cifrado de cualquier tipo de archivo,
@@ -121,11 +127,11 @@ garantizando la seguridad y confidencialidad de la información. Incluye una int
 amigable y validaciones para prevenir errores de clave o formato. Todo esto realizado
 usando <b>Basic</b> en <b>Visual Studio</b>.
       </p>
-      <span>ENERO 2018 | Compañia o institucion: Proyecto académico</span>
+      <span data-lang="exp3_date">ENERO 2018 | Compañia o institucion: Proyecto académico</span>
     </div>
    <div class="exp-card">
-      <h3>Sistema de gestión académica en línea - GESTOR DE PROYECTO</h3>
-      <p>
+      <h3 data-lang="exp4_title">Sistema de gestión académica en línea - GESTOR DE PROYECTO</h3>
+      <p data-lang="exp4_desc">
         Desarrollé una plataforma web para instituciones educativas que permite a los
 profesores asignar tareas, subir materiales de apoyo y evaluar entregas, mientras que
 los estudiantes pueden enviar sus trabajos, consultar calificaciones y acceder a
@@ -133,7 +139,7 @@ recursos académicos. El sistema centraliza la administración académica y mejo
 comunicación entre docentes y alumnos, optimizando el seguimiento del progreso
 escolar. Todo esto lo realice usando <b>PHP</b> en <b>Atom</b> y <b>MySQL Workbench</b>.
       </p>
-      <span>MARZO 2018 | Compañia o institucion: Proyecto académico</span>
+      <span data-lang="exp4_date">MARZO 2018 | Compañia o institucion: Proyecto académico</span>
     </div>
 
 
@@ -142,7 +148,7 @@ escolar. Todo esto lo realice usando <b>PHP</b> en <b>Atom</b> y <b>MySQL Workbe
 
   <!-- EDUCACIÓN -->
   <section class="section bg">
-    <h2>Educación</h2>
+    <h2 data-lang="education">Educación</h2>
       <div class="education-container">
 
     <!-- UDG -->
@@ -151,8 +157,8 @@ escolar. Todo esto lo realice usando <b>PHP</b> en <b>Atom</b> y <b>MySQL Workbe
         <img src="imagenes/logosSkills/udglogo.png" alt="Universidad de Guadalajara" class="img-front">
         <img src="imagenes/logosSkills/promedioUdg.gif" alt="Puntaje UDG" class="img-back">
       </div>
-      <h3>Ingeniería Informática</h3>
-      <p>Universidad de Guadalajara</p>
+      <h3 data-lang="edu1_degree">Ingeniería Informática</h3>
+      <p data-lang="edu1_school">Universidad de Guadalajara</p>
     </div>
 
     <!-- CECYTEJ -->
@@ -161,7 +167,7 @@ escolar. Todo esto lo realice usando <b>PHP</b> en <b>Atom</b> y <b>MySQL Workbe
         <img src="imagenes/logosSkills/cecytelogo.png" alt="CECYTEJ" class="img-front">
         <img src="imagenes/logosSkills/promediocecyte.gif" alt="Puntaje CECYTEJ" class="img-back">
       </div>
-      <h3>Técnico en Mantenimiento</h3>
+      <h3 data-lang="edu2_degree">Técnico en Mantenimiento de Equipos y Sistemas</h3>
       <p>CECYTEJ</p>
     </div>
 
@@ -170,7 +176,7 @@ escolar. Todo esto lo realice usando <b>PHP</b> en <b>Atom</b> y <b>MySQL Workbe
 
   <!-- PROYECTOS -->
   <section class="section">
-    <h2>Proyectos</h2>
+    <h2 data-lang="projects">Proyectos</h2>
 
     
   <div class="project-container">
@@ -180,20 +186,20 @@ escolar. Todo esto lo realice usando <b>PHP</b> en <b>Atom</b> y <b>MySQL Workbe
     <div class="project-slider">
       <a href="https://github.com/Nijarec/Encriptador_Cesar.git" target="_blank" class="project-link">
       <div class="project-card active">
-        <h3>Encriptador Cesar</h3>
-        <p>Programa desarrollado en Visual Basic, que encripta textos a través de encriptación césar.</p>
+        <h3 data-lang="project1_title">Encriptador Cesar</h3>
+        <p data-lang="project1_desc">Programa desarrollado en Visual Basic, que encripta textos a través de encriptación césar.</p>
       </div>
       </a>
       <a href="https://github.com/Nijarec/Reproductor_Simple.git" target="_blank" class="project-link">
       <div class="project-card">
-        <h3>Reproductor de Musica</h3>
-        <p>Es un reproductor de muscia crado con lenguaje Java en Android Studio.</p>
+        <h3 data-lang="project2_title">Reproductor de Musica</h3>
+        <p data-lang="project2_desc">Es un reproductor de muscia crado con lenguaje Java en Android Studio.</p>
       </div>
       </a>
 <a href="https://github.com/Nijarec/SalariosMinimosMexico.git" target="_blank" class="project-link">
       <div class="project-card">
-        <h3>App Salarios Minimos en Mexico</h3>
-        <p>Es una aplicación desarrollada con Java en Android Studio, pensada para mostrar los salarios minimos que deben de resivir los trabajadores segun su empleo.</p>
+        <h3 data-lang="project3_title">App Salarios Minimos en Mexico</h3>
+        <p data-lang="project3_desc">Es una aplicación desarrollada con Java en Android Studio, pensada para mostrar los salarios minimos que deben de resivir los trabajadores segun su empleo.</p>
       </div>
       </a>
       <!-- agrega más proyectos -->
@@ -232,7 +238,7 @@ prevBtn.addEventListener('click', () => {
   <!-- CONTACTO -->
   <section class="section-contact">
     <div class="cristal-effect">
-    <h2>Contacto</h2>
+    <h2 data-lang="contact">Contacto</h2>
     <p>Email: ing.nijarec.gomez@gmail.com</p>
     <p>GitHub: <a class="enlace-contact" href="https://github.com/Nijarec">https://github.com/Nijarec</a></p>
     <p>LinkedIn: <a class="enlace-contact" href="https://www.linkedin.com/in/bernardo-nijarec-g%C3%B3mez-rizo-09272027a/">linkedin.com/in/bernardo-nijarec-gómez-rizo-09272027a</a></p>
@@ -245,4 +251,3 @@ prevBtn.addEventListener('click', () => {
 
 </body>
 </html>
-
